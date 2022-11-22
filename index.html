@@ -19,7 +19,7 @@
   <title>CV Homepage</title>
 </head>
 
-<body>
+<body">
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md navbar-dark sticky-top rounded-bottom shadow" style="background-color: #276794;">
@@ -147,6 +147,16 @@
     </p>
   </div>
 
+  
+<!-- Script for closing nav-bar on link click instead of it staying open -->
+<script type="text/javascript">
+  const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('main-nav')
+const bsCollapse = new bootstrap.Collapse(menuToggle)
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { bsCollapse.toggle() })
+})
+</script>
 
 </body>
 
