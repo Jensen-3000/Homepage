@@ -1,90 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <!-- Bootstrap 5 icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
-    <title>CV Homepage</title>
-  </head>
-  <body>
-    
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-      <div class="container-xxl">
-        <a href="#" class="navbar-brand">
-          <span class="fw-bold text-secondary">
-            Min hjemmeside
-          </span>
-        </a>
-        <!-- Toggle button for mobile nav -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#ommig">Om mig</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#cv">CV</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#spørgsmål">Spørgsmål</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#kontakt">Kontakt</a>
-              </li>
-            </ul>
-          </div>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- Bootstrap 5 Javascript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap 5 icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+  <title>CV Homepage</title>
+</head>
+
+<body style="background: linear-gradient(135deg, #8EC5FC 0%, #E0C3FC 100%); margin: 0; background-attachment: fixed;">
+  <header class="d-flex p-3 mx-3 justify-content-center border border-3 my-3 shadow">
+    <h1>Velkommen til min hjemmeside</h1>
+  </header>
+
+  <!-- About me-->
+  <section>
+    <div class="d-flex flex-column py-3 mx-3">
+      <h2>Om mig</h2>
+      <ul class="pt-3 lh-1">
+        <p>Ivrig efter at lære mere om opbygning af software og 'Best Practices'</p>
+        <p>Jeg er lærenem og bygger viden fra andres erfaringer, både gode og dårlige.</p>
+        <p>Kan godt lide det kollegiale sammenspil og sparring.</p>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="d-flex mx-3">
+      <div class="row gx-4">
+        <h3 class="py-3">Her er nogle ting jeg har lært om..</h3>
+
+        <div class="col-md-4">
+          <p><strong>Programmering</strong></p>
+          <ul>
+            <li>C#</li>
+            <li>HTML 5</li>
+            <li>Bootstrap 5</li>
+          </ul>
+
         </div>
-      </nav>
-      
-      
-      <!-- Welcome to my page -->
-      <div class="container p-5 my-5 border border-3 text-center">
-        <h1>Velkommen til min hjemmeside</h1>
-      </div>
-      
-      <!-- About me and CV -->
-      <div class="container p-2 border">
-        <div class="row">
-          <div class="col-sm">
-            <h1>Om mig</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </div>
-          <div class="col-sm">
-            
-            <h5>Programmering</h5>
-            <ul>
-              <li>C#</li>
-              <li>Bootstrap 5</li>
-            </ul>
+        <div class="col-md-4">
+          <p><strong>Operativ system</strong></p>
+          <ul>
+            <li>Windows 7, 8.1, 10</li>
+            <li>Hyper-V</li>
+            <li>Windows Server 2012</li>
+          </ul>
+        </div>
 
-            <h5>Operativ system</h5>
-            <ul>
-              <li>Hyper-V</li>
-              <li>Windows Server 2012</li>
-            </ul>  
-            
-            <h5>Netværk</h5>
-            <ul>
-              <li>CCNA ITN</li>
-            </ul>  
-            
-          </div>
+        <div class="col-md-4">
+          <p><strong>Netværk</strong></p>
+          <ul>
+            <li>CCNA ITN</li>
+            <li>God forstårelse for IPv-4, IPv-6</li>
+            <li>Samt Binær og hexadecimal systemet</li>
+          </ul>
         </div>
       </div>
+    </div>
+  </section>
 
-      
-      <!-- Bootstrap 5 Javascript -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <div class="d-flex mx-3">
+    <i class="bi bi-github"></i>
+    <a href="https://github.com/Jensen-3000" target="_blank" class="ms-3">Jensen-3000</a>
+  </div>
 
-    </body>
-    </html>
+</body>
+
+</html>
